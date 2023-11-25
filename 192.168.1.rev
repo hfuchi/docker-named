@@ -1,0 +1,17 @@
+$TTL 86400 ; 24 hours, could have been written as 24h or 1d
+$ORIGIN 1.168.192.IN-ADDR.ARPA.
+@  1D  IN  SOA ns1.example.com. hostmaster.example.com. (
+         2002022401 ; serial
+         3H ; refresh
+         15 ; retry
+         1w ; expire
+         3h ; minimum
+        )
+
+       IN  NS ns.example.com.
+       IN  NS ns.test.com.
+226    IN  PTR    ns.example.com.
+80     IN  PTR    www.example.com.            
+230    IN  PTR    nfs.example.com.  
+25     IN  PTR    mail.example.com.   
+
